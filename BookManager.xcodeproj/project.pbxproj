@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		0E1BA3952888576700012438 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1BA3942888576700012438 /* AppDelegate.swift */; };
 		0E1BA3972888576700012438 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1BA3962888576700012438 /* SceneDelegate.swift */; };
-		0E1BA3992888576700012438 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1BA3982888576700012438 /* ViewController.swift */; };
 		0E1BA39C2888576700012438 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E1BA39A2888576700012438 /* Main.storyboard */; };
 		0E1BA39E2888576B00012438 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E1BA39D2888576B00012438 /* Assets.xcassets */; };
 		0E1BA3A12888576B00012438 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E1BA39F2888576B00012438 /* LaunchScreen.storyboard */; };
+		0E1BA3A928885C2700012438 /* BookCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1BA3A828885C2700012438 /* BookCollectionViewCell.swift */; };
+		0E1BA3AB28885C4400012438 /* BookManageCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1BA3AA28885C4400012438 /* BookManageCollectionViewController.swift */; };
+		0E1BA3AD2888627C00012438 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1BA3AC2888627B00012438 /* Book.swift */; };
+		0E1BA3AF2888640F00012438 /* BookInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1BA3AE2888640F00012438 /* BookInfo.swift */; };
+		0E1BA3B228886C2700012438 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 0E1BA3B128886C2700012438 /* Kingfisher */; };
+		0E1BA3B528886C4900012438 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 0E1BA3B428886C4900012438 /* Toast */; };
+		0E1BA3B728887CC300012438 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1BA3B628887CC300012438 /* UIColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0E1BA3912888576700012438 /* BookManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E1BA3942888576700012438 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E1BA3962888576700012438 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0E1BA3982888576700012438 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0E1BA39B2888576700012438 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0E1BA39D2888576B00012438 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E1BA3A02888576B00012438 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E1BA3A22888576B00012438 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E1BA3A828885C2700012438 /* BookCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCollectionViewCell.swift; sourceTree = "<group>"; };
+		0E1BA3AA28885C4400012438 /* BookManageCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookManageCollectionViewController.swift; sourceTree = "<group>"; };
+		0E1BA3AC2888627B00012438 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		0E1BA3AE2888640F00012438 /* BookInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookInfo.swift; sourceTree = "<group>"; };
+		0E1BA3B628887CC300012438 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E1BA3B528886C4900012438 /* Toast in Frameworks */,
+				0E1BA3B228886C2700012438 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,9 +70,13 @@
 			children = (
 				0E1BA3942888576700012438 /* AppDelegate.swift */,
 				0E1BA3962888576700012438 /* SceneDelegate.swift */,
-				0E1BA3982888576700012438 /* ViewController.swift */,
 				0E1BA39A2888576700012438 /* Main.storyboard */,
+				0E1BA3AE2888640F00012438 /* BookInfo.swift */,
+				0E1BA3A828885C2700012438 /* BookCollectionViewCell.swift */,
+				0E1BA3AC2888627B00012438 /* Book.swift */,
+				0E1BA3AA28885C4400012438 /* BookManageCollectionViewController.swift */,
 				0E1BA39D2888576B00012438 /* Assets.xcassets */,
+				0E1BA3B628887CC300012438 /* UIColor.swift */,
 				0E1BA39F2888576B00012438 /* LaunchScreen.storyboard */,
 				0E1BA3A22888576B00012438 /* Info.plist */,
 			);
@@ -83,6 +99,10 @@
 			dependencies = (
 			);
 			name = BookManager;
+			packageProductDependencies = (
+				0E1BA3B128886C2700012438 /* Kingfisher */,
+				0E1BA3B428886C4900012438 /* Toast */,
+			);
 			productName = BookManager;
 			productReference = 0E1BA3912888576700012438 /* BookManager.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +131,10 @@
 				Base,
 			);
 			mainGroup = 0E1BA3882888576700012438;
+			packageReferences = (
+				0E1BA3B028886C2700012438 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				0E1BA3B328886C4900012438 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
+			);
 			productRefGroup = 0E1BA3922888576700012438 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,8 +162,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E1BA3992888576700012438 /* ViewController.swift in Sources */,
+				0E1BA3AF2888640F00012438 /* BookInfo.swift in Sources */,
+				0E1BA3B728887CC300012438 /* UIColor.swift in Sources */,
+				0E1BA3A928885C2700012438 /* BookCollectionViewCell.swift in Sources */,
 				0E1BA3952888576700012438 /* AppDelegate.swift in Sources */,
+				0E1BA3AB28885C4400012438 /* BookManageCollectionViewController.swift in Sources */,
+				0E1BA3AD2888627C00012438 /* Book.swift in Sources */,
 				0E1BA3972888576700012438 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,6 +323,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +333,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -323,6 +352,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -332,7 +362,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -358,6 +388,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0E1BA3B028886C2700012438 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		0E1BA3B328886C4900012438 /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scalessec/Toast-Swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0E1BA3B128886C2700012438 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0E1BA3B028886C2700012438 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		0E1BA3B428886C4900012438 /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0E1BA3B328886C4900012438 /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			productName = Toast;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0E1BA3892888576700012438 /* Project object */;
 }
