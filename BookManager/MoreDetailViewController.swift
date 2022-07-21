@@ -8,6 +8,8 @@
 import UIKit
 
 class MoreDetailViewController: UIViewController {
+    
+    static var identifier = "MoreDetailViewController"
 
     override func viewDidLoad() {
         super.viewDidLoad()
