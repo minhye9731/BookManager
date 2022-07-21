@@ -25,6 +25,7 @@ class BookManageCollectionViewController: UICollectionViewController {
         navigationController?.navigationBar.scrollEdgeAppearance?.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.mainColorSet[1]]
         // 네비게이션 바 라인 삭제(shqdow 색상 투명으로 바꾸는 꼼수?_
 //        navigationController.shadow(color: .clear.cgColor)
+        navigationItem.backButtonTitle = " "
     }
     
     func setLayoutConfigure() {
@@ -58,15 +59,15 @@ class BookManageCollectionViewController: UICollectionViewController {
     // 아이템 선택시 팝업
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        // toast 팝업
-        view.makeToast("월간 베스트 \(indexPath.item + 1)위 도서를 선택했습니다.", duration: 2, position: .center)
+        // toast 팝업 끝까지 보여준 이후에 화면이동
+        view.makeToast("월간 베스트 \(indexPath.item + 1)위 도서를 선택했습니다.", duration: 0.5, position: .center) { _ in
+            let pushVC = self.storyboard?.instantiateViewController(withIdentifier: DetailViewController.identifier) as! DetailViewController
+            self.navigationController?.pushViewController(pushVC, animated: true)
+        }
         
-        // 상세페이지로 넘어가기
-        let pushVC = self.storyboard?.instantiateViewController(withIdentifier: DetailViewController.identifier) as! DetailViewController
-        self.navigationController?.pushViewController(pushVC, animated: true)
     }
     
-    
+    // 상단 검색버튼 클릭시 화면전환
     @IBAction func searchButtonTapped(_ sender: UIBarButtonItem) {
         
         let vc = self.storyboard?.instantiateViewController(withIdentifier: SearchViewController.identifier) as! SearchViewController
@@ -77,14 +78,4 @@ class BookManageCollectionViewController: UICollectionViewController {
         
         self.present(nav, animated: true)
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
 }

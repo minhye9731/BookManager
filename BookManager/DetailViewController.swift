@@ -13,9 +13,21 @@ class DetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        navigationItem.backButtonTitle = " "
         
     }
+    
+    
+    @IBAction func buttonTapped(_ sender: UIButton) {
+        
+        let pushVC = self.storyboard?.instantiateViewController(withIdentifier: MoreDetailViewController.identifier) as! MoreDetailViewController
+        self.navigationController?.pushViewController(pushVC, animated: true)
+    
+        
+        
+    }
+    
     
 
 }
