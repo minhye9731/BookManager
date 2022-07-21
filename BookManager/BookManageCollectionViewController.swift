@@ -62,6 +62,8 @@ class BookManageCollectionViewController: UICollectionViewController {
         view.makeToast("월간 베스트 \(indexPath.item + 1)위 도서를 선택했습니다.", duration: 2, position: .center)
         
         // 상세페이지로 넘어가기
+        let pushVC = self.storyboard?.instantiateViewController(withIdentifier: DetailViewController.identifier) as! DetailViewController
+        self.navigationController?.pushViewController(pushVC, animated: true)
     }
     
     
