@@ -17,6 +17,14 @@ class BookManageCollectionViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setLayoutConfigure()
+        setNavigation()
+    }
+    
+    func setNavigation() {
+        navigationItem.title = "월간 Top 10 도서"
+        navigationController?.navigationBar.scrollEdgeAppearance?.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.mainColorSet[1]]
+        // 네비게이션 바 라인 삭제(shqdow 색상 투명으로 바꾸는 꼼수?_
+//        navigationController.shadow(color: .clear.cgColor)
     }
     
     func setLayoutConfigure() {
@@ -50,6 +58,31 @@ class BookManageCollectionViewController: UICollectionViewController {
     // 아이템 선택시 팝업
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
+        // toast 팝업
         view.makeToast("월간 베스트 \(indexPath.item + 1)위 도서를 선택했습니다.", duration: 2, position: .center)
+        
+        // 상세페이지로 넘어가기
     }
+    
+    
+    @IBAction func searchButtonTapped(_ sender: UIBarButtonItem) {
+        
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: SearchViewController.identifier) as! SearchViewController
+        
+        let nav = UINavigationController(rootViewController: vc)
+        
+        nav.modalPresentationStyle = .fullScreen
+        
+        self.present(nav, animated: true)
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
